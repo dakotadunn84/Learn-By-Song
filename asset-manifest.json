@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Learn-By-Song/static/css/main.d1b05096.chunk.css",
-    "main.js": "/Learn-By-Song/static/js/main.8a6445f7.chunk.js",
-    "main.js.map": "/Learn-By-Song/static/js/main.8a6445f7.chunk.js.map",
-    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.57def650.js",
-    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.57def650.js.map",
-    "static/js/2.6eccdaef.chunk.js": "/Learn-By-Song/static/js/2.6eccdaef.chunk.js",
-    "static/js/2.6eccdaef.chunk.js.map": "/Learn-By-Song/static/js/2.6eccdaef.chunk.js.map",
-    "static/js/3.90ac18c0.chunk.js": "/Learn-By-Song/static/js/3.90ac18c0.chunk.js",
-    "static/js/3.90ac18c0.chunk.js.map": "/Learn-By-Song/static/js/3.90ac18c0.chunk.js.map",
+    "main.js": "/Learn-By-Song/static/js/main.c3693640.chunk.js",
+    "main.js.map": "/Learn-By-Song/static/js/main.c3693640.chunk.js.map",
+    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.d046e123.js",
+    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.d046e123.js.map",
+    "static/js/2.3a5e0623.chunk.js": "/Learn-By-Song/static/js/2.3a5e0623.chunk.js",
+    "static/js/2.3a5e0623.chunk.js.map": "/Learn-By-Song/static/js/2.3a5e0623.chunk.js.map",
+    "static/js/3.70346783.chunk.js": "/Learn-By-Song/static/js/3.70346783.chunk.js",
+    "static/js/3.70346783.chunk.js.map": "/Learn-By-Song/static/js/3.70346783.chunk.js.map",
     "index.html": "/Learn-By-Song/index.html",
-    "precache-manifest.a0b8e1ed949124bac3e9b044ee312cd8.js": "/Learn-By-Song/precache-manifest.a0b8e1ed949124bac3e9b044ee312cd8.js",
+    "precache-manifest.501bfcbf9782a0cdc58b9a8e3adca97e.js": "/Learn-By-Song/precache-manifest.501bfcbf9782a0cdc58b9a8e3adca97e.js",
     "service-worker.js": "/Learn-By-Song/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/Learn-By-Song/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.6eccdaef.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.6eccdaef.chunk.js.LICENSE.txt",
+    "static/js/2.3a5e0623.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.3a5e0623.chunk.js.LICENSE.txt",
     "static/media/monkey.png": "/Learn-By-Song/static/media/monkey.d8b13f1a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.57def650.js",
-    "static/js/2.6eccdaef.chunk.js",
+    "static/js/runtime-main.d046e123.js",
+    "static/js/2.3a5e0623.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.8a6445f7.chunk.js"
+    "static/js/main.c3693640.chunk.js"
   ]
 }
