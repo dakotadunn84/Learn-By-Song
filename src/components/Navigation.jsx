@@ -1,45 +1,51 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Collapse,
+  Nav,
+  UncontrolledDropdown,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavItem,
+  NavLink,
+  NavbarText,
+} from "reactstrap";
 
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/">
-            Learn By Song
-          </Link>
-          <div>
-            <ul class="navbar-nav ml-auto">
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/Eloping_to_the_moon" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/Eloping_to_the_moon">
-                  私奔到月球 Eloping to the Moon
-                </Link>
-              </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/I_want_your_love" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/I_want_your_love">
-                  我要你的爱 I want your love
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <nav class="navbar navbar-expand bg-dark">
+        <div class="container-fluid">
+          <Navbar color="dark" dark>
+            <NavbarBrand href="/home">Learn By Song</NavbarBrand>
+            <NavbarToggler onClick={function noRefCheck() {}} />
+            <Collapse navbar>
+              <Nav className="me-auto" navbar>
+                <UncontrolledDropdown nav>
+                  <DropdownToggle caret nav>
+                    Songs
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem>
+                      <Link to="/Eloping_to_the_moon">
+                        私奔到月球 Eloping to the Moon
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to="/I_want_your_love">
+                        我要你的爱 I want your love
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </Nav>
+            </Collapse>
+          </Navbar>
         </div>
       </nav>
     </div>
