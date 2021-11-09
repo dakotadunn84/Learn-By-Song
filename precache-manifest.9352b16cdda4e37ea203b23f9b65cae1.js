@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22dd5226dfd3197333f7fc84d557e85a",
+    "revision": "6d513dff9bab9c9a42c6b14bea75a743",
     "url": "/Learn-By-Song/index.html"
   },
   {
-    "revision": "ff28481d865eaf84ac7e",
+    "revision": "e26dfd6d266bba721eb8",
     "url": "/Learn-By-Song/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Learn-By-Song/static/js/3.346fd3ec.chunk.js"
   },
   {
-    "revision": "ff28481d865eaf84ac7e",
-    "url": "/Learn-By-Song/static/js/main.20b2663c.chunk.js"
+    "revision": "e26dfd6d266bba721eb8",
+    "url": "/Learn-By-Song/static/js/main.99f92d53.chunk.js"
   },
   {
     "revision": "38c73a2338ab004346d2",
