@@ -9,7 +9,7 @@ function About() {
         <div class="row" class="d-flex justify-content-center">
             <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" class="justify-content-center">
             <h1 class="font-weight-light">我要你的爱 I want your love</h1>
             <p>我</p>
             <p>我要</p>
