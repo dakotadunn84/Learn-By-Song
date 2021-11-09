@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { useTable } from "react-table"
+import { useTable } from "react-table";
+import "../App.css";
 
 function Song2() {
 
@@ -124,7 +125,7 @@ function Song2() {
   
   return (
     <div className="私奔到月球 Eloping to the Moon">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-center my-5">
           <div>
             <ReactPlayer url="https://www.youtube.com/watch?v=IFTZtuXKzFs" />
