@@ -1,11 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import "../App.css";
 
 function About() {
   return (
-    <div className="我要你的爱 I want your love">
-      <div class="container">
-        <div class="row align-items-center my-5">
+    <div class="container-fliud" className="我要你的爱 I want your love">
+      <div class="container-fliud">
+        <div class="row align-items-center">
           <div>
             <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
           </div>

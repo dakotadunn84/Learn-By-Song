@@ -18,14 +18,14 @@ import {
 
 function Navigation(props) {
   return (
-    <div className="navigation">
-      <nav class="navbar navbar-expand bg-dark">
-        <div class="container-fluid">
+    <div>
+      <nav class="navbar-expand bg-dark">
+        <div>
           <Navbar color="dark" dark>
             <NavbarBrand href="/Learn-By-Song/">Learn By Song</NavbarBrand>
             <NavbarToggler onClick={function noRefCheck() {}} />
             <Collapse navbar>
-              <Nav className="me-auto" navbar>
+              <Nav navbar>
                 <UncontrolledDropdown nav>
                   <DropdownToggle caret nav>
                     Songs

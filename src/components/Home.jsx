@@ -5,8 +5,8 @@ import logo from "./monkey.png";
 function Home() {
   return (
     <div className="Home">
-      <div class="container">
-        <div class="row align-items-center my-5">
+      <div>
+        <div class="row align-items-center">
           <div class="col-lg-12">
             <img src={logo} className="App-logo" alt="logo" />
           </div>
