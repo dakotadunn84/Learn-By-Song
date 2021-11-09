@@ -129,7 +129,7 @@ function Song2() {
           <div class="row" class="d-flex justify-content-center">
             <ReactPlayer url="https://www.youtube.com/watch?v=IFTZtuXKzFs" />
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" class="justify-content-center">
             <h1 class="font-weight-light">私奔到月球 Eloping to the Moon</h1>
             <p>其实妳 是个心狠又手辣 的小偷</p>
             <p>Actually, you are a ruthless thief</p>
