@@ -125,9 +125,8 @@ function Song2() {
   
   return (
     <div className="私奔到月球 Eloping to the Moon">
-      <div class="container-fluid">
-        <div class="row align-items-center my-5">
-          <div>
+      <div class="container" class="col">
+          <div class="row" class="d-flex justify-content-center">
             <ReactPlayer url="https://www.youtube.com/watch?v=IFTZtuXKzFs" />
           </div>
           <div class="col-lg-5">
@@ -217,7 +216,6 @@ function Song2() {
             })}
           </tbody>
         </table>
-        </div>
       </div>
     </div>
   );
