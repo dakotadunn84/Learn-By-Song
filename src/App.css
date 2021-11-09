@@ -45,3 +45,20 @@
   top: 0;
   left: 0;
 }
+
+.card-100 .card {
+  width: 100%;
+}
+
+.card-50 .card {
+  width: 50%;
+}
+
+.lookatmeborder .card-group {
+  border-color: #d9534f;
+  border-width: thick;
+  border-style: solid;
+  border: 2px solid ;
+  border-radius: 5px;
+
+}
