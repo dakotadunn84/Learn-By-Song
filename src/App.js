@@ -22,7 +22,7 @@ function App() {
           <Router>
             <Navigation />
             <Switch>
-              <Route path="/Learn-By-Song/Home" exact component={() => <Home />} />
+              <Route path="/Learn-By-Song/" exact component={() => <Home />} />
               <Route
                 path="/Learn-By-Song/Eloping_to_the_moon"
                 exact
