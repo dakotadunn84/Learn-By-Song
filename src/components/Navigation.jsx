@@ -22,7 +22,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand bg-dark">
         <div class="container-fluid">
           <Navbar color="dark" dark>
-            <NavbarBrand href="/home">Learn By Song</NavbarBrand>
+            <NavbarBrand href="/Learn-By-Song/home">Learn By Song</NavbarBrand>
             <NavbarToggler onClick={function noRefCheck() {}} />
             <Collapse navbar>
               <Nav className="me-auto" navbar>
@@ -32,12 +32,12 @@ function Navigation(props) {
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      <Link to="/Eloping_to_the_moon">
+                      <Link to="/Learn-By-Song/Eloping_to_the_moon">
                         私奔到月球 Eloping to the Moon
                       </Link>
                     </DropdownItem>
                     <DropdownItem>
-                      <Link to="/I_want_your_love">
+                      <Link to="/Learn-By-Song/I_want_your_love">
                         我要你的爱 I want your love
                       </Link>
                     </DropdownItem>

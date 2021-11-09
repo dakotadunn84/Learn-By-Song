@@ -22,14 +22,14 @@ function App() {
           <Router>
             <Navigation />
             <Switch>
-              <Route path="/Home" exact component={() => <Home />} />
+              <Route path="/Learn-By-Song/Home" exact component={() => <Home />} />
               <Route
-                path="/Eloping_to_the_moon"
+                path="/Learn-By-Song/Eloping_to_the_moon"
                 exact
                 component={() => <Song1 />}
               />
               <Route
-                path="/I_want_your_love"
+                path="/Learn-By-Song/I_want_your_love"
                 exact
                 component={() => <Song2 />}
               />
