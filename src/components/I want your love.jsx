@@ -5,9 +5,8 @@ import "../App.css";
 function About() {
   return (
     <div class="container-fliud" className="我要你的爱 I want your love">
-      <div class="container-fliud">
-        <div class="row align-items-center">
-          <div>
+      <div class="col">
+        <div class="row" class="d-flex justify-content-center">
             <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
           </div>
           <div class="col-lg-5">
@@ -25,7 +24,6 @@ function About() {
               Baby hold me tight and do what I tell you
             </p>
           </div>
-        </div>
       </div>
     </div>
   );
