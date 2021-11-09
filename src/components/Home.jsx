@@ -4,7 +4,7 @@ import logo from "./monkey.png";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="Home">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-12">
