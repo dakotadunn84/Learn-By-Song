@@ -4,23 +4,19 @@ import "../App.css";
 import {
   CardGroup,
   Card,
-  CardImg,
   CardBody,
   CardTitle,
-  CardSubtitle,
-  CardText,
-  Button,
-  DropdownItem,
+  CardText
 } from "reactstrap";
 
 function About() {
   return (
     <div class="container-fliud" className="我要你的爱 I want your love">
       <div class="col">
-        <div class="row" class="d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
           <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
         </div>
-        <div class="col-lg-5" class="justify-content-center" className="lookatmeborder">
+        <div class="col-lg-5 justify-content-center" className="lookatmeborder">
           <h1 class="font-weight-light">我要你的爱 I want your love</h1>
           <CardGroup>
             <Card className="text-white bg-dark">

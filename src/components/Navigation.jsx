@@ -7,13 +7,9 @@ import {
   Collapse,
   Nav,
   UncontrolledDropdown,
-  Dropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavItem,
-  NavLink,
-  NavbarText,
+  DropdownItem
 } from "reactstrap";
 
 function Navigation(props) {
