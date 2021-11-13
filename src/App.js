@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Home, Song1, Song2 } from "./components";
+import { Navigation, Home, Song1, Song2, HSK1, HSK2 } from "./components";
 
 function App() {
   return (
@@ -21,6 +21,16 @@ function App() {
                 path="/Learn-By-Song/I_want_your_love"
                 exact
                 component={() => <Song2 />}
+              />
+              <Route
+                path="/Learn-By-Song/HSK_1"
+                exact
+                component={() => <HSK1 />}
+              />
+              <Route
+                path="/Learn-By-Song/HSK_2"
+                exact
+                component={() => <HSK2 />}
               />
             </Switch>
           </Router>

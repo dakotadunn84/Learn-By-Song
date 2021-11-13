@@ -16,7 +16,7 @@ function Navigation(props) {
   return (
     <div>
       <nav class="navbar-expand bg-dark">
-        <div>
+        <div class="row d-flex justify-content-center">
           <Navbar color="dark" dark>
             <NavbarBrand href="/Learn-By-Song/">Learn By Song</NavbarBrand>
             <NavbarToggler onClick={function noRefCheck() {}} />
@@ -35,6 +35,27 @@ function Navigation(props) {
                     <DropdownItem>
                       <Link to="/Learn-By-Song/I_want_your_love">
                         我要你的爱 I want your love
+                      </Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </Nav>
+            </Collapse>
+            <Collapse navbar>
+              <Nav navbar>
+                <UncontrolledDropdown nav>
+                  <DropdownToggle caret nav>
+                    Vocabulary
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem>
+                      <Link to="/Learn-By-Song/HSK_1">
+                        HSK 1
+                      </Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to="/Learn-By-Song/HSK_2">
+                        HSK 2
                       </Link>
                     </DropdownItem>
                   </DropdownMenu>
