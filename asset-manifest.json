@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Learn-By-Song/static/css/main.776ae8e9.chunk.css",
-    "main.js": "/Learn-By-Song/static/js/main.be110aeb.chunk.js",
-    "main.js.map": "/Learn-By-Song/static/js/main.be110aeb.chunk.js.map",
+    "main.js": "/Learn-By-Song/static/js/main.947ecab7.chunk.js",
+    "main.js.map": "/Learn-By-Song/static/js/main.947ecab7.chunk.js.map",
     "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.63fc2f33.js",
     "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.63fc2f33.js.map",
     "static/js/2.5a89ad91.chunk.js": "/Learn-By-Song/static/js/2.5a89ad91.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.2807a660.chunk.js": "/Learn-By-Song/static/js/3.2807a660.chunk.js",
     "static/js/3.2807a660.chunk.js.map": "/Learn-By-Song/static/js/3.2807a660.chunk.js.map",
     "index.html": "/Learn-By-Song/index.html",
-    "precache-manifest.63e05fd31aa46e6344e8c694cb46601d.js": "/Learn-By-Song/precache-manifest.63e05fd31aa46e6344e8c694cb46601d.js",
+    "precache-manifest.b547d212378263b1fd3789a024e07faa.js": "/Learn-By-Song/precache-manifest.b547d212378263b1fd3789a024e07faa.js",
     "service-worker.js": "/Learn-By-Song/service-worker.js",
     "static/css/main.776ae8e9.chunk.css.map": "/Learn-By-Song/static/css/main.776ae8e9.chunk.css.map",
     "static/js/2.5a89ad91.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.5a89ad91.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.63fc2f33.js",
     "static/js/2.5a89ad91.chunk.js",
     "static/css/main.776ae8e9.chunk.css",
-    "static/js/main.be110aeb.chunk.js"
+    "static/js/main.947ecab7.chunk.js"
   ]
 }
