@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { CardGroup, Card, CardBody, CardTitle, CardText } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
 function About() {
   return (
