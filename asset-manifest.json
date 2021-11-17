@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/Learn-By-Song/static/css/main.e7bfe868.chunk.css",
-    "main.js": "/Learn-By-Song/static/js/main.15208e30.chunk.js",
-    "main.js.map": "/Learn-By-Song/static/js/main.15208e30.chunk.js.map",
-    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.63fc2f33.js",
-    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.63fc2f33.js.map",
-    "static/js/2.5a89ad91.chunk.js": "/Learn-By-Song/static/js/2.5a89ad91.chunk.js",
-    "static/js/2.5a89ad91.chunk.js.map": "/Learn-By-Song/static/js/2.5a89ad91.chunk.js.map",
-    "static/js/3.2807a660.chunk.js": "/Learn-By-Song/static/js/3.2807a660.chunk.js",
-    "static/js/3.2807a660.chunk.js.map": "/Learn-By-Song/static/js/3.2807a660.chunk.js.map",
+    "main.css": "/Learn-By-Song/static/css/main.be9ef0ee.chunk.css",
+    "main.js": "/Learn-By-Song/static/js/main.221eef52.chunk.js",
+    "main.js.map": "/Learn-By-Song/static/js/main.221eef52.chunk.js.map",
+    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.351caeb5.js",
+    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.351caeb5.js.map",
+    "static/js/2.937ee070.chunk.js": "/Learn-By-Song/static/js/2.937ee070.chunk.js",
+    "static/js/2.937ee070.chunk.js.map": "/Learn-By-Song/static/js/2.937ee070.chunk.js.map",
+    "static/js/3.bad14dd1.chunk.js": "/Learn-By-Song/static/js/3.bad14dd1.chunk.js",
+    "static/js/3.bad14dd1.chunk.js.map": "/Learn-By-Song/static/js/3.bad14dd1.chunk.js.map",
     "index.html": "/Learn-By-Song/index.html",
-    "precache-manifest.2412bb1e2b00b9c8f7bc907eca910bc9.js": "/Learn-By-Song/precache-manifest.2412bb1e2b00b9c8f7bc907eca910bc9.js",
+    "precache-manifest.47fdcee78a5067158a70667ccf4fc7f4.js": "/Learn-By-Song/precache-manifest.47fdcee78a5067158a70667ccf4fc7f4.js",
     "service-worker.js": "/Learn-By-Song/service-worker.js",
-    "static/css/main.e7bfe868.chunk.css.map": "/Learn-By-Song/static/css/main.e7bfe868.chunk.css.map",
-    "static/js/2.5a89ad91.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.5a89ad91.chunk.js.LICENSE.txt",
+    "static/css/main.be9ef0ee.chunk.css.map": "/Learn-By-Song/static/css/main.be9ef0ee.chunk.css.map",
+    "static/js/2.937ee070.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.937ee070.chunk.js.LICENSE.txt",
+    "static/media/I want your love.mp3": "/Learn-By-Song/static/media/I want your love.6c2611ff.mp3",
     "static/media/monkey.png": "/Learn-By-Song/static/media/monkey.d8b13f1a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.63fc2f33.js",
-    "static/js/2.5a89ad91.chunk.js",
-    "static/css/main.e7bfe868.chunk.css",
-    "static/js/main.15208e30.chunk.js"
+    "static/js/runtime-main.351caeb5.js",
+    "static/js/2.937ee070.chunk.js",
+    "static/css/main.be9ef0ee.chunk.css",
+    "static/js/main.221eef52.chunk.js"
   ]
 }
