@@ -54,6 +54,29 @@
   width: 50%;
 }
 
+.card-width-split-3 .card {
+  background-color: #d9534f;
+  width: calc(100%/3);
+}
+
+.card-width-split-2 .card {
+  background-color: #d9534f;
+  width: calc(100%/2);
+}
+
+.card-width-split-8 .card {
+  background-color: #d9534f;
+  width: calc(100%/8);
+}
+
+.card-width-split-3-8 .card {
+  width: calc(100%*3/8);
+}
+
+.card-width-split-6 .card {
+  width: calc(100%/6);
+}
+
 .lookatmeborder .card-group {
   border-color: #d9534f;
   border-width: thick;
