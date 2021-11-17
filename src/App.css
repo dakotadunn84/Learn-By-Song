@@ -46,6 +46,24 @@
   left: 0;
 }
 
+.test-5 .col {
+  width: calc(100%/5);
+}
+
+.test-2of5 .col {
+  width: calc(100%/2.5);
+}
+
+.col-20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.col-40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+
 .card-100 .card {
   width: 100%;
 }
@@ -54,10 +72,6 @@
   width: 50%;
 }
 
-.card-width-split-3 .card {
-  background-color: #d9534f;
-  width: calc(100%/3);
-}
 .card-width-split-1 .card {
   background-color: #d9534f;
   width: calc(100%/1);
