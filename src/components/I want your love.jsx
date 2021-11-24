@@ -10,6 +10,22 @@ import {
   Button,
 } from "reactstrap";
 import Song from "../Audio/I want your love.mp3";
+import 我 from "./Vocab/我";
+import 要 from "./Vocab/要";
+import 你 from "./Vocab/你";
+import 的 from "./Vocab/的";
+import 爱 from "./Vocab/爱";
+import 不 from "./Vocab/不";
+import 走 from "./Vocab/走";
+import 过 from "./Vocab/过";
+import 来 from "./Vocab/来";
+import 说 from "./Vocab/说";
+import 出 from "./Vocab/出";
+import 只 from "./Vocab/只";
+import 声 from "./Vocab/声";
+import 肯 from "./Vocab/肯";
+import 你的 from "./Vocab/你的";
+import 为什么 from "./Vocab/为什么";
 
 const useAudio = (url) => {
   const [audio] = useState(new Audio(Song));
@@ -48,60 +64,24 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
               </div>
             </div>
           </CardGroup>
@@ -110,46 +90,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
               </div>
@@ -157,168 +108,57 @@ const Player = ({ url }) => {
           </CardGroup>
           <CardGroup>
             <div className="col col-20 p-0">
-              <Card className="text-white bg-dark">
-                <CardBody className="p-0">
-                  <CardTitle className="my-0">我</CardTitle>
-                  <CardText className="my-0">wǒ</CardText>
-                  <CardText className="my-0">I</CardText>
-                </CardBody>
-              </Card>
+              <我 />
             </div>
-
             <div className="col col-20  p-0">
-              <Card className="text-white bg-dark">
-                <CardBody className="p-0">
-                  <CardTitle className="my-0">要</CardTitle>
-                  <CardText className="my-0">yào</CardText>
-                  <CardText className="my-0">want</CardText>
-                </CardBody>
-              </Card>
+              <要 />
             </div>
-
-            <div className="col .col-40 ">
+            <div className="col col-40 ">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">的</CardTitle>
-                    <CardText className="my-0">de</CardText>
-                    <CardText className="my-0">'s</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <的 />
               </div>
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你的</CardTitle>
-                    <CardText className="my-0">your</CardText>
-                  </CardBody>
-                </Card>
+                <你的 />
               </div>
             </div>
             <div className="col col-20  p-0">
-              <Card className="text-white bg-dark">
-                <CardBody className="p-0">
-                  <CardTitle className="my-0">爱</CardTitle>
-                  <CardText className="my-0">ài</CardText>
-                  <CardText className="my-0">love</CardText>
-                </CardBody>
-              </Card>
+              <爱 />
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">走</CardTitle>
-                    <CardText className="my-0">zǒu</CardText>
-                    <CardText className="my-0">walk</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">过</CardTitle>
-                    <CardText className="my-0">guò</CardText>
-                    <CardText className="my-0">come</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">来</CardTitle>
-                    <CardText className="my-0">lái</CardText>
-                    <CardText className="my-0">here</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <为什么 />
+                <不 />
+                <走 />
+                <过 />
+                <来 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
               </div>
             </div>
           </CardGroup>
@@ -327,46 +167,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
               </div>
@@ -377,57 +188,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">爱</CardTitle>
-                        <CardText className="my-0">ài</CardText>
-                        <CardText className="my-0">love</CardText>
-                      </CardBody>
-                    </Card>
+                    <爱 />
                   </div>
                 </div>
               </div>
@@ -436,55 +212,19 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle>你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">说</CardTitle>
-                    <CardText className="my-0">shuō</CardText>
-                    <CardText className="my-0">speak</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">出</CardTitle>
-                    <CardText className="my-0">chū</CardText>
-                    <CardText className="my-0">out</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">来</CardTitle>
-                    <CardText className="my-0">lái</CardText>
-                    <CardText className="my-0">here</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <为什么 />
+                <不 />
+                <说 />
+                <出 />
+                <来 />
               </div>
               <div className="row card-100">
                 <Card className="text-white bg-dark">
                   <CardBody className="p-0">
                     <CardTitle className="my-0">Line Meaning:</CardTitle>
                     <CardText className="my-0">
-                      Why don't you say it out loud here
+                      Why don't you say it out loud
                     </CardText>
                   </CardBody>
                 </Card>
@@ -539,60 +279,24 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
               </div>
             </div>
           </CardGroup>
@@ -601,46 +305,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
               </div>
@@ -651,57 +326,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">爱</CardTitle>
-                        <CardText className="my-0">ài</CardText>
-                        <CardText className="my-0">love</CardText>
-                      </CardBody>
-                    </Card>
+                    <爱 />
                   </div>
                 </div>
               </div>
@@ -710,110 +350,36 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">走</CardTitle>
-                    <CardText className="my-0">zǒu</CardText>
-                    <CardText className="my-0">walk</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">过</CardTitle>
-                    <CardText className="my-0">guò</CardText>
-                    <CardText className="my-0">come</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">来</CardTitle>
-                    <CardText className="my-0">lái</CardText>
-                    <CardText className="my-0">here</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <为什么 />
+                <不 />
+                <走 />
+                <过 />
+                <来 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
               </div>
             </div>
           </CardGroup>
@@ -822,46 +388,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
               </div>
@@ -872,57 +409,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">我</CardTitle>
-                        <CardText className="my-0">wǒ</CardText>
-                        <CardText className="my-0">I</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">要</CardTitle>
-                        <CardText className="my-0">yào</CardText>
-                        <CardText className="my-0">want</CardText>
-                      </CardBody>
-                    </Card>
+                    <我 />
+                    <要 />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你</CardTitle>
-                        <CardText className="my-0">nǐ</CardText>
-                        <CardText className="my-0">you</CardText>
-                      </CardBody>
-                    </Card>
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">的</CardTitle>
-                        <CardText className="my-0">de</CardText>
-                        <CardText className="my-0">'s</CardText>
-                      </CardBody>
-                    </Card>
+                    <你 />
+                    <的 />
                   </div>
                   <div className="row card-width-split-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">你的</CardTitle>
-                        <CardText className="my-0">your</CardText>
-                      </CardBody>
-                    </Card>
+                    <你的 />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">爱</CardTitle>
-                        <CardText className="my-0">ài</CardText>
-                        <CardText className="my-0">love</CardText>
-                      </CardBody>
-                    </Card>
+                    <爱 />
                   </div>
                 </div>
               </div>
@@ -931,96 +433,24 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">说</CardTitle>
-                    <CardText className="my-0">shuō</CardText>
-                    <CardText className="my-0">speak</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">出</CardTitle>
-                    <CardText className="my-0">chū</CardText>
-                    <CardText className="my-0">out</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">来</CardTitle>
-                    <CardText className="my-0">lái</CardText>
-                    <CardText className="my-0">here</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <为什么 />
+                <不 />
+                <说 />
+                <出 />
+                <来 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">爱</CardTitle>
-                    <CardText className="my-0">ài</CardText>
-                    <CardText className="my-0">love</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">爱</CardTitle>
-                    <CardText className="my-0">ài</CardText>
-                    <CardText className="my-0">love</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <爱 />
+                <你 />
+                <我 />
+                <爱 />
+                <你 />
               </div>
             </div>
           </CardGroup>
@@ -1056,209 +486,60 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-4">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">我</CardTitle>
-                    <CardText className="my-0">wǒ</CardText>
-                    <CardText className="my-0">I</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">说</CardTitle>
-                    <CardText className="my-0">shuō</CardText>
-                    <CardText className="my-0">say</CardText>
-                  </CardBody>
-                </Card>
+                <我 />
+                <要 />
+                <你 />
+                <说 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-5">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">只</CardTitle>
-                    <CardText className="my-0">zhǐ</CardText>
-                    <CardText className="my-0">only</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark" lass="col">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">要</CardTitle>
-                    <CardText className="my-0">yào</CardText>
-                    <CardText className="my-0">want</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">说</CardTitle>
-                    <CardText className="my-0">shuō</CardText>
-                    <CardText className="my-0">say</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">声</CardTitle>
-                    <CardText className="my-0">shēng</CardText>
-                    <CardText className="my-0">noise</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">爱</CardTitle>
-                    <CardText className="my-0">ài</CardText>
-                    <CardText className="my-0">love</CardText>
-                  </CardBody>
-                </Card>
+                <只 />
+                <要 />
+                <说 />
+                <声 />
+                <爱 />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-9">
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">你</CardTitle>
-                    <CardText className="my-0">nǐ</CardText>
-                    <CardText className="my-0">you</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">为什么</CardTitle>
-                    <CardText className="my-0">wèi shén me</CardText>
-                    <CardText className="my-0">why</CardText>
-                  </CardBody>
-                </Card>
-
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">不</CardTitle>
-                    <CardText className="my-0">bù</CardText>
-                    <CardText className="my-0">no</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="col text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">肯</CardTitle>
-                    <CardText className="my-0">kěn</CardText>
-                    <CardText className="my-0">willing</CardText>
-                  </CardBody>
-                </Card>
-                <Card className="text-white bg-dark">
-                  <CardBody className="p-0">
-                    <CardTitle className="my-0">说</CardTitle>
-                    <CardText className="my-0">shuō</CardText>
-                    <CardText className="my-0">say</CardText>
-                  </CardBody>
-                </Card>
+                <你 />
+                <为什么 />
+                <不 />
+                <为什么 />
+                <不 />
+                <为什么 />
+                <不 />
+                <肯 />
+                <说 />
               </div>
             </div>
           </CardGroup>
