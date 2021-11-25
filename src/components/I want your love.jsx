@@ -53,7 +53,7 @@ const Player = ({ url }) => {
   return (
     <div>
       <div className="col">
-        <div className="row d-flex justify-content-center">
+        <div className="row justify-content-center">
           <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
         </div>
         <div className="lookatmeborder">
@@ -63,38 +63,50 @@ const Player = ({ url }) => {
           </Button>
           <CardGroup>
             <div className="col">
-              <div className="row card-width-split-1">
-                <我 />
-              </div>
-            </div>
-          </CardGroup>
-          <CardGroup>
-            <div className="col">
-              <div className="row card-width-split-2">
-                <我 />
-                <要 />
-              </div>
-            </div>
-          </CardGroup>
-          <CardGroup>
-            <div className="col">
-              <div className="row card-width-split-3">
-                <我 />
-                <要 />
-                <你 />
+              <div className="row">
+                <div className="col col-1of1 p-0">
+                  <我 />
+                </div>
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row">
-                <div className="col card-width-split-2">
-                  <div className="row">
-                    <我 />
-                    <要 />
-                  </div>
+                <div className="col col-1of2 p-0">
+                  <我 />
                 </div>
-                <div className="col">
+                <div className="col col-1of2 p-0">
+                  <要 />
+                </div>
+              </div>
+            </div>
+          </CardGroup>
+          <CardGroup>
+            <div className="col">
+              <div className="row">
+                <div className="col col-1of3 p-0">
+                  <我 />
+                </div>
+                <div className="col col-1of3 p-0">
+                  <要 />
+                </div>
+                <div className="col col-1of3 p-0">
+                  <你 />
+                </div>
+              </div>
+            </div>
+          </CardGroup>
+          <CardGroup>
+            <div className="col">
+              <div className="row">
+                <div className="col col-1of4 p-0">
+                  <我 />
+                </div>
+                <div className="col col-1of4  p-0">
+                  <要 />
+                </div>
+                <div className="col col-2of4 ">
                   <div className="row card-width-split-2">
                     <你 />
                     <的 />
@@ -107,23 +119,27 @@ const Player = ({ url }) => {
             </div>
           </CardGroup>
           <CardGroup>
-            <div className="col col-20 p-0">
-              <我 />
-            </div>
-            <div className="col col-20  p-0">
-              <要 />
-            </div>
-            <div className="col col-40 ">
-              <div className="row card-width-split-2">
-                <你 />
-                <的 />
+            <div className="col">
+              <div className="row">
+                <div className="col col-1of5 p-0">
+                  <我 />
+                </div>
+                <div className="col col-1of5  p-0">
+                  <要 />
+                </div>
+                <div className="col col-2of5 ">
+                  <div className="row card-width-split-2">
+                    <你 />
+                    <的 />
+                  </div>
+                  <div className="row card-width-split-1">
+                    <你的 />
+                  </div>
+                </div>
+                <div className="col col-1of5  p-0">
+                  <爱 />
+                </div>
               </div>
-              <div className="row card-width-split-1">
-                <你的 />
-              </div>
-            </div>
-            <div className="col col-20  p-0">
-              <爱 />
             </div>
           </CardGroup>
           <CardGroup>
