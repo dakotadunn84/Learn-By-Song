@@ -54,7 +54,7 @@ const Player = ({ url }) => {
     <div>
       <div className="col">
         <div className="row justify-content-center">
-          <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" />
+          <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" gender="neutral-gender" />
         </div>
         <div className="lookatmeborder">
           <h1 className="font-weight-light">我要你的爱 I want your love</h1>
@@ -65,7 +65,7 @@ const Player = ({ url }) => {
             <div className="col">
               <div className="row">
                 <div className="col col-1of1 p-0">
-                  <我 />
+                  <我 gender="neutral-gender"/>
                 </div>
               </div>
             </div>
@@ -74,10 +74,10 @@ const Player = ({ url }) => {
             <div className="col">
               <div className="row">
                 <div className="col col-1of2 p-0">
-                  <我 />
+                  <我 gender="neutral-gender" />
                 </div>
                 <div className="col col-1of2 p-0">
-                  <要 />
+                  <要 gender="neutral-gender" />
                 </div>
               </div>
             </div>
@@ -86,13 +86,13 @@ const Player = ({ url }) => {
             <div className="col">
               <div className="row">
                 <div className="col col-1of3 p-0">
-                  <我 />
+                  <我 gender="neutral-gender" />
                 </div>
                 <div className="col col-1of3 p-0">
-                  <要 />
+                  <要 gender="neutral-gender" />
                 </div>
                 <div className="col col-1of3 p-0">
-                  <你 />
+                  <你 gender="neutral-gender" />
                 </div>
               </div>
             </div>
@@ -101,18 +101,18 @@ const Player = ({ url }) => {
             <div className="col">
               <div className="row">
                 <div className="col col-1of4 p-0">
-                  <我 />
+                  <我 gender="neutral-gender" />
                 </div>
                 <div className="col col-1of4  p-0">
-                  <要 />
+                  <要 gender="neutral-gender" />
                 </div>
                 <div className="col col-2of4 ">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -122,22 +122,22 @@ const Player = ({ url }) => {
             <div className="col">
               <div className="row">
                 <div className="col col-1of5 p-0">
-                  <我 />
+                  <我 gender="neutral-gender" />
                 </div>
                 <div className="col col-1of5  p-0">
-                  <要 />
+                  <要 gender="neutral-gender" />
                 </div>
                 <div className="col col-2of5 ">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col col-1of5  p-0">
-                  <爱 />
+                  <爱 gender="neutral-gender" />
                 </div>
               </div>
             </div>
@@ -145,36 +145,36 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <你 />
-                <为什么 />
-                <不 />
-                <走 />
-                <过 />
-                <来 />
+                <你 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <走 gender="neutral-gender" />
+                <过 gender="neutral-gender" />
+                <来 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <我 />
+                <我 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <我 />
-                <要 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <我 />
-                <要 />
-                <你 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
@@ -183,17 +183,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -204,22 +204,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <爱 />
+                    <爱 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -228,12 +228,12 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <你 />
-                <为什么 />
-                <不 />
-                <说 />
-                <出 />
-                <来 />
+                <你 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <说 gender="neutral-gender" />
+                <出 gender="neutral-gender" />
+                <来 gender="neutral-gender" />
               </div>
               <div className="row card-100">
                 <Card className="text-white bg-dark">
@@ -295,24 +295,24 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <我 />
+                <我 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <我 />
-                <要 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <我 />
-                <要 />
-                <你 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
@@ -321,17 +321,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -342,22 +342,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <爱 />
+                    <爱 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -366,36 +366,36 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <你 />
-                <为什么 />
-                <不 />
-                <走 />
-                <过 />
-                <来 />
+                <你 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <走 gender="neutral-gender" />
+                <过 gender="neutral-gender" />
+                <来 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <我 />
+                <我 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <我 />
-                <要 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <我 />
-                <要 />
-                <你 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
@@ -404,17 +404,17 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -425,22 +425,22 @@ const Player = ({ url }) => {
               <div className="row">
                 <div className="col card-width-split-2">
                   <div className="row">
-                    <我 />
-                    <要 />
+                    <我 gender="neutral-gender" />
+                    <要 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col">
                   <div className="row card-width-split-2">
-                    <你 />
-                    <的 />
+                    <你 gender="neutral-gender" />
+                    <的 gender="neutral-gender" />
                   </div>
                   <div className="row card-width-split-1">
-                    <你的 />
+                    <你的 gender="neutral-gender" />
                   </div>
                 </div>
                 <div className="col card-width-split-1">
                   <div className="row">
-                    <爱 />
+                    <爱 gender="neutral-gender" />
                   </div>
                 </div>
               </div>
@@ -449,24 +449,24 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <你 />
-                <为什么 />
-                <不 />
-                <说 />
-                <出 />
-                <来 />
+                <你 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <说 gender="neutral-gender" />
+                <出 gender="neutral-gender" />
+                <来 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-6">
-                <我 />
-                <爱 />
-                <你 />
-                <我 />
-                <爱 />
-                <你 />
+                <我 gender="neutral-gender" />
+                <爱 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
+                <我 gender="neutral-gender" />
+                <爱 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
@@ -502,60 +502,60 @@ const Player = ({ url }) => {
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-1">
-                <我 />
+                <我 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-2">
-                <我 />
-                <要 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-3">
-                <我 />
-                <要 />
-                <你 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-4">
-                <我 />
-                <要 />
-                <你 />
-                <说 />
+                <我 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <你 gender="neutral-gender" />
+                <说 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-5">
-                <只 />
-                <要 />
-                <说 />
-                <声 />
-                <爱 />
+                <只 gender="neutral-gender" />
+                <要 gender="neutral-gender" />
+                <说 gender="neutral-gender" />
+                <声 gender="neutral-gender" />
+                <爱 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
           <CardGroup>
             <div className="col">
               <div className="row card-width-split-9">
-                <你 />
-                <为什么 />
-                <不 />
-                <为什么 />
-                <不 />
-                <为什么 />
-                <不 />
-                <肯 />
-                <说 />
+                <你 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <为什么 gender="neutral-gender" />
+                <不 gender="neutral-gender" />
+                <肯 gender="neutral-gender" />
+                <说 gender="neutral-gender" />
               </div>
             </div>
           </CardGroup>
