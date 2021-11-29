@@ -10,6 +10,7 @@ import {
   Button,
 } from "reactstrap";
 import Song from "../Audio/I want your love.mp3";
+import Line from "./Line";
 import 我 from "./Vocab/我";
 import 要 from "./Vocab/要";
 import 你 from "./Vocab/你";
@@ -54,70 +55,33 @@ const Player = ({ url }) => {
     <div>
       <div className="col">
         <div className="row justify-content-center">
-          <ReactPlayer url="https://www.youtube.com/watch?v=41vF3wYN9S4" gender="neutral-gender" />
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+            gender="neutral-gender"
+          />
         </div>
         <div className="lookatmeborder">
           <h1 className="font-weight-light">我要你的爱 I want your love</h1>
           <Button className="mb-2" onClick={toggle}>
             {playing ? "Pause" : "Play Audio"}
           </Button>
-          <CardGroup>
-            <div className="col">
-              <div className="row">
-                <div className="col col-1of1 p-0">
-                  <我 gender="neutral-gender"/>
-                </div>
-              </div>
-            </div>
-          </CardGroup>
-          <CardGroup>
-            <div className="col">
-              <div className="row">
-                <div className="col col-1of2 p-0">
-                  <我 gender="neutral-gender" />
-                </div>
-                <div className="col col-1of2 p-0">
-                  <要 gender="neutral-gender" />
-                </div>
-              </div>
-            </div>
-          </CardGroup>
-          <CardGroup>
-            <div className="col">
-              <div className="row">
-                <div className="col col-1of3 p-0">
-                  <我 gender="neutral-gender" />
-                </div>
-                <div className="col col-1of3 p-0">
-                  <要 gender="neutral-gender" />
-                </div>
-                <div className="col col-1of3 p-0">
-                  <你 gender="neutral-gender" />
-                </div>
-              </div>
-            </div>
-          </CardGroup>
-          <CardGroup>
-            <div className="col">
-              <div className="row">
-                <div className="col col-1of4 p-0">
-                  <我 gender="neutral-gender" />
-                </div>
-                <div className="col col-1of4  p-0">
-                  <要 gender="neutral-gender" />
-                </div>
-                <div className="col col-2of4 ">
-                  <div className="row card-width-split-2">
-                    <你 gender="neutral-gender" />
-                    <的 gender="neutral-gender" />
-                  </div>
-                  <div className="row card-width-split-1">
-                    <你的 gender="neutral-gender" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CardGroup>
+          <Line>
+            <我 columnSize="col-1of1" gender="neutral-gender" />
+          </Line>
+          <Line>
+            <我 columnSize="col-1of2" gender="neutral-gender" />
+            <要 columnSize="col-1of2" gender="neutral-gender" />
+          </Line>
+          <Line>
+            <我 columnSize="col-1of3" gender="neutral-gender" />
+            <要 columnSize="col-1of3" gender="neutral-gender" />
+            <你 columnSize="col-1of3" gender="neutral-gender" />
+          </Line>
+          <Line>
+            <我 columnSize="col-1of4" gender="neutral-gender" />
+            <要 columnSize="col-1of4" gender="neutral-gender" />
+            <你的 columnSize="col-2of4" gender="neutral-gender" />
+          </Line>
           <CardGroup>
             <div className="col">
               <div className="row">
