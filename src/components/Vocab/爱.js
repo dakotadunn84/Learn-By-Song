@@ -2,15 +2,17 @@ import React from "react";
 import "../../App.css";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
-const 爱 = () => {
+const 爱 = (props) => {
   return (
-    <Card className="text-white bg-dark">
-      <CardBody className="p-0">
-        <CardTitle className="my-0">爱</CardTitle>
-        <CardText className="my-0">ài</CardText>
-        <CardText className="my-0">love</CardText>
-      </CardBody>
-    </Card>
+    <div className={`col p-0 ${props.columnSize}`}>
+      <Card className={`text-white ${props.gender}`}>
+        <CardBody className="p-0">
+          <CardTitle className="my-0">爱</CardTitle>
+          <CardText className="my-0">ài</CardText>
+          <CardText className="my-0">love</CardText>
+        </CardBody>
+      </Card>
+    </div>
   );
 };
 

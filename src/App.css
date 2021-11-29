@@ -90,6 +90,21 @@
   max-width: 20%;
 }
 
+.col-1of6 {
+  flex: 0 0 calc(100% * 1 / 6);
+  max-width: calc(100% * 1 / 6);
+}
+
+.col-1of8 {
+  flex: 0 0 calc(100% * 1 / 8);
+  max-width: calc(100% * 1 / 8);
+}
+
+.col-1of15 {
+  flex: 0 0 calc(100% * 1 / 15);
+  max-width: calc(100% * 1 / 15);
+}
+
 .col-2of4 {
   flex: 0 0 calc(100% * 2 / 4);
   max-width: calc(100% * 2 / 4);
@@ -98,6 +113,31 @@
 .col-2of5 {
   flex: 0 0 calc(100% * 2 / 5);
   max-width: 40%;
+}
+
+.col-3of4 {
+  flex: 0 0 calc(100% * 3 / 4);
+  max-width: calc(100% * 3 / 4);
+}
+
+.col-3of5 {
+  flex: 0 0 calc(100% * 3 / 5);
+  max-width: calc(100% * 3 / 5);
+}
+
+.col-3of6 {
+  flex: 0 0 calc(100% * 3 / 6);
+  max-width: calc(100% * 3 / 6);
+}
+
+.col-3of8 {
+  flex: 0 0 calc(100% * 3 / 8);
+  max-width: calc(100% * 3 / 8);
+}
+
+.col-3of15 {
+  flex: 0 0 calc(100% * 3 / 15);
+  max-width: calc(100% * 3 / 15);
 }
 
 .card-100 .card {
