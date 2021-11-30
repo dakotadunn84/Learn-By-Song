@@ -1,26 +1,25 @@
 {
   "files": {
     "main.css": "/Learn-By-Song/static/css/main.3da193bd.chunk.css",
-    "main.js": "/Learn-By-Song/static/js/main.b07c859a.chunk.js",
-    "main.js.map": "/Learn-By-Song/static/js/main.b07c859a.chunk.js.map",
-    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.351caeb5.js",
-    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.351caeb5.js.map",
-    "static/js/2.e953b29c.chunk.js": "/Learn-By-Song/static/js/2.e953b29c.chunk.js",
-    "static/js/2.e953b29c.chunk.js.map": "/Learn-By-Song/static/js/2.e953b29c.chunk.js.map",
-    "static/js/3.bad14dd1.chunk.js": "/Learn-By-Song/static/js/3.bad14dd1.chunk.js",
-    "static/js/3.bad14dd1.chunk.js.map": "/Learn-By-Song/static/js/3.bad14dd1.chunk.js.map",
+    "main.js": "/Learn-By-Song/static/js/main.8757d675.chunk.js",
+    "main.js.map": "/Learn-By-Song/static/js/main.8757d675.chunk.js.map",
+    "runtime-main.js": "/Learn-By-Song/static/js/runtime-main.336b5b3a.js",
+    "runtime-main.js.map": "/Learn-By-Song/static/js/runtime-main.336b5b3a.js.map",
+    "static/js/2.a5c1d955.chunk.js": "/Learn-By-Song/static/js/2.a5c1d955.chunk.js",
+    "static/js/2.a5c1d955.chunk.js.map": "/Learn-By-Song/static/js/2.a5c1d955.chunk.js.map",
+    "static/js/3.346fd3ec.chunk.js": "/Learn-By-Song/static/js/3.346fd3ec.chunk.js",
+    "static/js/3.346fd3ec.chunk.js.map": "/Learn-By-Song/static/js/3.346fd3ec.chunk.js.map",
     "index.html": "/Learn-By-Song/index.html",
-    "precache-manifest.373a454da9bb84982742ba3c2ebce8b7.js": "/Learn-By-Song/precache-manifest.373a454da9bb84982742ba3c2ebce8b7.js",
+    "precache-manifest.4b8d2c0e44c17f8edfb6faa88275e009.js": "/Learn-By-Song/precache-manifest.4b8d2c0e44c17f8edfb6faa88275e009.js",
     "service-worker.js": "/Learn-By-Song/service-worker.js",
     "static/css/main.3da193bd.chunk.css.map": "/Learn-By-Song/static/css/main.3da193bd.chunk.css.map",
-    "static/js/2.e953b29c.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.e953b29c.chunk.js.LICENSE.txt",
-    "static/media/I want your love.mp3": "/Learn-By-Song/static/media/I want your love.6c2611ff.mp3",
+    "static/js/2.a5c1d955.chunk.js.LICENSE.txt": "/Learn-By-Song/static/js/2.a5c1d955.chunk.js.LICENSE.txt",
     "static/media/monkey.png": "/Learn-By-Song/static/media/monkey.d8b13f1a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.351caeb5.js",
-    "static/js/2.e953b29c.chunk.js",
+    "static/js/runtime-main.336b5b3a.js",
+    "static/js/2.a5c1d955.chunk.js",
     "static/css/main.3da193bd.chunk.css",
-    "static/js/main.b07c859a.chunk.js"
+    "static/js/main.8757d675.chunk.js"
   ]
 }
