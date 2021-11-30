@@ -6,12 +6,12 @@ import { CardGroup, Card, CardBody, CardTitle, CardText } from "reactstrap";
 function Song2() {
   return (
     <div className="私奔到月球 Eloping to the Moon">
-      <div class="col">
-        <div class="row d-flex justify-content-center">
+      <div className="col">
+        <div className="row d-flex justify-content-center">
           <ReactPlayer url="https://www.youtube.com/watch?v=IFTZtuXKzFs" />
         </div>
-        <div class="justify-content-center">
-          <h1 class="font-weight-light">私奔到月球 Eloping to the Moon</h1>
+        <div className="justify-content-center">
+          <h1 className="font-weight-light">私奔到月球 Eloping to the Moon</h1>
           <CardGroup>
             <Card className="text-white bg-danger">
               <CardBody>

@@ -8,7 +8,7 @@ const 要 = (props) => {
       <Card className={`text-white ${props.gender}`}>
         <CardBody className="p-0">
           <CardTitle className="my-0">要</CardTitle>
-          <CardText className="my-0">yào</CardText>
+          <CardText className="my-0">{props.settingDisplayPinyin ? "yào": undefined}</CardText>
           <CardText className="my-0">want</CardText>
         </CardBody>
       </Card>
