@@ -8,7 +8,7 @@ const 为什么 = (props) => {
       <Card className={`text-white ${props.gender}`}>
         <CardBody className="p-0">
           <CardTitle className="my-0">为什么</CardTitle>
-          <CardText className="my-0">wèi shén me</CardText>
+          <CardText className="my-0">{props.settingDisplayPinyin ? "wèi shén me": undefined}</CardText>
           <CardText className="my-0">why</CardText>
         </CardBody>
       </Card>
