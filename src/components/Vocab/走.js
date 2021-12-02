@@ -9,7 +9,7 @@ const 走 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">走</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "zǒu": undefined}</CardText>
-          <CardText className="my-0">walk</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "walk": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

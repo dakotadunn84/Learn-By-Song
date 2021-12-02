@@ -9,7 +9,7 @@ const 声 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">声</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "shēng": undefined}</CardText>
-          <CardText className="my-0">noise</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "noise": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

@@ -9,7 +9,7 @@ const 爱 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">爱</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "ài": undefined}</CardText>
-          <CardText className="my-0">love</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "love": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

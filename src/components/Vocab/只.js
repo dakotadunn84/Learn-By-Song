@@ -9,7 +9,7 @@ const 只 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">只</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "zhǐ": undefined}</CardText>
-          <CardText className="my-0">only</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "only": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

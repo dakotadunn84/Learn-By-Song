@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "../App.css";
-import { Card, CardBody, CardTitle, CardText } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, CardGroup } from "reactstrap";
 import Line from "./Line";
 import 我 from "./Vocab/我";
 import 要 from "./Vocab/要";
@@ -24,47 +24,123 @@ class Song2 extends React.Component {
     super(props);
 
     this.state = {
+      settingDisplayYouTube: true,
+      settingDisplaySpotify: true,
       settingDisplayTraditional: true,
       settingDisplaySimplified: true,
       settingDisplayPinyin: true,
+      settingDisplayEnglish: true,
+      settingDisplayHSK2: false,
+      settingDisplayHSK3: false,
+      settingDisplaySingerColor: false,
     };
   }
 
   render() {
     return (
-      <div>
-        <div className="col">
-          <div className="row justify-content-center">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=41vF3wYN9S4"
-              gender="neutral-gender"
-            />
-          </div>
+      <div className="row justify-content-center">
+        <div className="col col-xl-7 p-4">
           <div className="lookatmeborder">
             <h1 className="font-weight-light">我要你的爱</h1>
+            <h1 className="font-weight-light">葛蘭</h1>
             <h1 className="font-weight-light">I want your love</h1>
-            <h3 className="font-weight-light">Settings</h3>
+            <h1 className="font-weight-light">Grace Chang</h1>
             <div>
-              <label>
-                <input
-                  type="checkbox"
-                  value="settingDisplayPinyin"
-                  defaultChecked={this.state.settingDisplayPinyin}
-                  onChange={(e) =>
-                    this.setState((prevState) => ({
-                      settingDisplayPinyin: !prevState.settingDisplayPinyin,
-                    }))
-                  }
-                />{" "}
-                Display Pinyin
-              </label>
+              <CardGroup className="my-1">
+                <Card className="text-white bg-dark">
+                  <CardBody className="p-0">
+                    <CardTitle className="my-0">Display Settings</CardTitle>
+                    <CardText className="my-0">
+                      <h4>
+                        <label>
+                          <input
+                            type="checkbox"
+                            value="settingDisplayYouTube"
+                            defaultChecked={this.state.settingDisplayYouTube}
+                            onChange={(e) =>
+                              this.setState((prevState) => ({
+                                settingDisplayYouTube:
+                                  !prevState.settingDisplayYouTube,
+                              }))
+                            }
+                          />{" "}
+                          YouTube Video
+                        </label>
+                      </h4>
+                      <h4>
+                        <label>
+                          <input
+                            type="checkbox"
+                            value="settingDisplaySpotify"
+                            defaultChecked={this.state.settingDisplaySpotify}
+                            onChange={(e) =>
+                              this.setState((prevState) => ({
+                                settingDisplaySpotify:
+                                  !prevState.settingDisplaySpotify,
+                              }))
+                            }
+                          />{" "}
+                          Spotify Audio
+                        </label>
+                      </h4>
+                      <h4>
+                        <label>
+                          <input
+                            type="checkbox"
+                            value="settingDisplayPinyin"
+                            defaultChecked={this.state.settingDisplayPinyin}
+                            onChange={(e) =>
+                              this.setState((prevState) => ({
+                                settingDisplayPinyin:
+                                  !prevState.settingDisplayPinyin,
+                              }))
+                            }
+                          />{" "}
+                          Pinyin
+                        </label>
+                      </h4>
+                      <h4>
+                        <label>
+                          <input
+                            type="checkbox"
+                            value="settingDisplayEnglish"
+                            defaultChecked={this.state.settingDisplayEnglish}
+                            onChange={(e) =>
+                              this.setState((prevState) => ({
+                                settingDisplayEnglish:
+                                  !prevState.settingDisplayEnglish,
+                              }))
+                            }
+                          />{" "}
+                          English
+                        </label>
+                      </h4>
+                    </CardText>
+                  </CardBody>
+                </Card>
+              </CardGroup>
             </div>
+
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+              height={this.state.settingDisplayYouTube ? "380px" : "0"}
+              width="100%"
+            />
+            <iframe
+              src="https://open.spotify.com/embed/track/3Ree0RiglJyG9ZSC0MG7LM?utm_source=generator"
+              width="100%"
+              height={this.state.settingDisplaySpotify ? "380" : "0"}
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            ></iframe>
 
             <Line>
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -72,11 +148,13 @@ class Song2 extends React.Component {
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -84,16 +162,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -101,16 +182,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -118,21 +202,25 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -140,31 +228,37 @@ class Song2 extends React.Component {
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <为什么
                 columnSize="col-3of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <走
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <过
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <来
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -172,6 +266,7 @@ class Song2 extends React.Component {
                 columnSize="col-1of1"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -179,11 +274,13 @@ class Song2 extends React.Component {
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -191,16 +288,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -208,16 +308,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -225,53 +328,63 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
-            <Line lineMeaning="Why don't you say it out loud?">
+            <Line lineMeaning="Why don't you say it out loud?" settingDisplayEnglish={this.state.settingDisplayEnglish}>
               <你
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <为什么
                 columnSize="col-3of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <说
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <出
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <来
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -322,6 +435,7 @@ class Song2 extends React.Component {
                 columnSize="col-1of1"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -329,11 +443,13 @@ class Song2 extends React.Component {
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -341,16 +457,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -358,16 +477,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -375,21 +497,25 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -397,31 +523,37 @@ class Song2 extends React.Component {
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <为什么
                 columnSize="col-3of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <走
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <过
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <来
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -429,6 +561,7 @@ class Song2 extends React.Component {
                 columnSize="col-1of1"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -436,11 +569,13 @@ class Song2 extends React.Component {
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -448,16 +583,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -465,16 +603,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -482,21 +623,25 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你的
                 columnSize="col-2of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -504,31 +649,37 @@ class Song2 extends React.Component {
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <为什么
                 columnSize="col-3of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <说
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <出
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <来
                 columnSize="col-1of8"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -536,31 +687,37 @@ class Song2 extends React.Component {
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <我
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -595,6 +752,7 @@ class Song2 extends React.Component {
                 columnSize="col-1of1"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -602,11 +760,13 @@ class Song2 extends React.Component {
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of2"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -614,16 +774,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of3"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -631,21 +794,25 @@ class Song2 extends React.Component {
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <你
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <说
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -653,26 +820,31 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <要
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <说
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <声
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <爱
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -680,16 +852,19 @@ class Song2 extends React.Component {
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <为什么
                 columnSize="col-3of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of5"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -697,11 +872,13 @@ class Song2 extends React.Component {
                 columnSize="col-3of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of4"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
             <Line>
@@ -709,21 +886,25 @@ class Song2 extends React.Component {
                 columnSize="col-3of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <不
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <肯
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
               <说
                 columnSize="col-1of6"
                 gender="neutral-gender"
                 settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
               />
             </Line>
           </div>
