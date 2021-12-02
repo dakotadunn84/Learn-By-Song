@@ -9,7 +9,7 @@ const 说 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">说</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "shuō": undefined}</CardText>
-          <CardText className="my-0">speak</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "speak": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

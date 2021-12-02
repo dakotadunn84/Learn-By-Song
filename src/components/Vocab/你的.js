@@ -8,15 +8,15 @@ const 你的 = (props) => {
   return (
     <div className={`col ${props.columnSize}`}>
       <div className="row">
-        <你 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin}/>
-        <的 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin}/>
+        <你 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish}/>
+        <的 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish}/>
       </div>
       <div className="row">
         <div className="col p-0 col-1of1 ">
           <Card className={`text-white ${props.gender}`}>
             <CardBody className="p-0">
-            <CardText className="my-0">你的</CardText>
-              <CardText className="my-0">your</CardText>
+            <CardText className="my-0">{props.settingDisplayEnglish ? "你的": undefined}</CardText>
+              <CardText className="my-0">{props.settingDisplayEnglish ? "your": undefined}</CardText>
             </CardBody>
           </Card>
         </div>

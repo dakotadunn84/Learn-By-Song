@@ -9,7 +9,7 @@ const 不 = (props) => {
         <CardBody className="p-0">
           <CardTitle className="my-0">不</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "bù": undefined}</CardText>
-          <CardText className="my-0">no</CardText>
+          <CardText className="my-0">{props.settingDisplayEnglish ? "no": undefined}</CardText>
         </CardBody>
       </Card>
     </div>
