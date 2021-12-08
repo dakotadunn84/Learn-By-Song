@@ -49,14 +49,28 @@ class Navigation extends React.Component {
                       Vocabulary
                     </DropdownToggle>
                     <DropdownMenu className="bg-dark text-white">
+                    <DropdownItem className="text-white">HSK 2</DropdownItem>
                       <DropdownItem>
                         <Link to="/Learn-By-Song/HSK_1" className="text-white">
-                          HSK 1
+                          HSK 2.0 Level 1
                         </Link>
                       </DropdownItem>
                       <DropdownItem>
                         <Link to="/Learn-By-Song/HSK_2" className="text-white">
-                          HSK 2
+                          HSK 2.0 Level 2
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem divider />
+                        
+                      <DropdownItem className="text-white">HSK 3.0 (2021)</DropdownItem>
+                      <DropdownItem>
+                        <Link to="/Learn-By-Song/HSK_3_Level_1" className="text-white">
+                          HSK 3.0 Level 1
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/Learn-By-Song/HSK_3_Level_2" className="text-white">
+                          HSK 3.0 Level 2
                         </Link>
                       </DropdownItem>
                     </DropdownMenu>

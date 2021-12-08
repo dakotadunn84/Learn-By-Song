@@ -10,6 +10,8 @@ const 为什么 = (props) => {
           <CardTitle className="my-0">为什么</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "wèi shén me": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "why": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK2 ? "HSK 2 Level: 2": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK3 ? "HSK 3 Level: 2": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

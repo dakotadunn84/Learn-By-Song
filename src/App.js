@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Home, Song1, Song2, HSK1, HSK2 } from "./components";
+import { Navigation, Home, Song1, Song2, HSK1, HSK2, HSK_3_Level_1, HSK_3_Level_2 } from "./components";
 
 class App extends React.Component {
   render() {
@@ -37,6 +37,16 @@ class App extends React.Component {
                   path="/Learn-By-Song/HSK_2"
                   exact
                   component={() => <HSK2 />}
+                />
+                <Route
+                  path="/Learn-By-Song/HSK_3_Level_1"
+                  exact
+                  component={() => <HSK_3_Level_1 />}
+                />
+                <Route
+                  path="/Learn-By-Song/HSK_3_Level_2"
+                  exact
+                  component={() => <HSK_3_Level_2 />}
                 />
               </Switch>
             </Router>
