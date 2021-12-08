@@ -47,8 +47,7 @@ export default class Navigation extends React.Component {
                     <Link
                       to="/Learn-By-Song/I_want_your_love"
                       className="text-dark"
-                      test2={this.props.test}
-                      testcreatedinnav="test created in nav"
+                      onClick={!this.state.collapsed ? this.toggleNavbar : undefined}
                     >
                       我要你的愛 I want your love
                     </Link>
@@ -57,6 +56,7 @@ export default class Navigation extends React.Component {
                     <Link
                       to="/Learn-By-Song/Eloping_to_the_moon"
                       className="text-dark"
+                      onClick={!this.state.collapsed ? this.toggleNavbar : undefined}
                     >
                       私奔到月球 Eloping to the Moon
                     </Link>
@@ -69,12 +69,12 @@ export default class Navigation extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/Learn-By-Song/HSK_1" className="text-dark">
+                    <Link to="/Learn-By-Song/HSK_1" className="text-dark" onClick={!this.state.collapsed ? this.toggleNavbar : undefined}>
                       HSK 2.0 Level 1
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Learn-By-Song/HSK_2" className="text-dark">
+                    <Link to="/Learn-By-Song/HSK_2" className="text-dark" onClick={!this.state.collapsed ? this.toggleNavbar : undefined}>
                       HSK 2.0 Level 2
                     </Link>
                   </DropdownItem>
@@ -83,6 +83,7 @@ export default class Navigation extends React.Component {
                     <Link
                       to="/Learn-By-Song/HSK_3_Level_1"
                       className="text-dark"
+                      onClick={!this.state.collapsed ? this.toggleNavbar : undefined}
                     >
                       HSK 3.0 Level 1
                     </Link>
@@ -91,6 +92,7 @@ export default class Navigation extends React.Component {
                     <Link
                       to="/Learn-By-Song/HSK_3_Level_2"
                       className="text-dark"
+                      onClick={!this.state.collapsed ? this.toggleNavbar : undefined}
                     >
                       HSK 3.0 Level 2
                     </Link>
