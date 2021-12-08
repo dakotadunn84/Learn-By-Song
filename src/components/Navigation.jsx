@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   NavbarBrand,
@@ -42,18 +43,24 @@ export default class Navigation extends React.Component {
                   Songs
                 </DropdownToggle>
                 <DropdownMenu right>
-                <DropdownItem><NavLink
-                  href="/Learn-By-Song/Eloping_to_the_moon/"
-                  className="text-dark"
-                >
-                  私奔到月球 Eloping to the Moon
-                </NavLink></DropdownItem>
-                  <DropdownItem><NavLink
-                  href="/Learn-By-Song/I_want_your_love/"
-                  className="text-dark"
-                >
-                  我要你的愛 I want your love
-                </NavLink></DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/Learn-By-Song/I_want_your_love"
+                      className="text-dark"
+                      test2={this.props.test}
+                      testcreatedinnav="test created in nav"
+                    >
+                      我要你的愛 I want your love
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/Learn-By-Song/Eloping_to_the_moon"
+                      className="text-dark"
+                    >
+                      私奔到月球 Eloping to the Moon
+                    </Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
@@ -61,22 +68,32 @@ export default class Navigation extends React.Component {
                   HSK Levels
                 </DropdownToggle>
                 <DropdownMenu right>
-                <DropdownItem><NavLink href="/Learn-By-Song/HSK_1/"className="text-dark">
-                    HSK 2.0 Level 1
-                  </NavLink></DropdownItem>
-                  <DropdownItem><NavLink href="/Learn-By-Song/HSK_2/"className="text-dark">
-                    HSK 2.0 Level 2
-                  </NavLink></DropdownItem>
-                  <DropdownItem divider />
                   <DropdownItem>
-                  <NavLink href="/Learn-By-Song/HSK_3_Level_1/" className="text-dark">
-                    HSK 3.0 Level 1
-                  </NavLink>
+                    <Link to="/Learn-By-Song/HSK_1" className="text-dark">
+                      HSK 2.0 Level 1
+                    </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <NavLink href="/Learn-By-Song/HSK_3_Level_2/" className="text-dark">
+                    <Link to="/Learn-By-Song/HSK_2" className="text-dark">
+                      HSK 2.0 Level 2
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    <Link
+                      to="/Learn-By-Song/HSK_3_Level_1"
+                      className="text-dark"
+                    >
+                      HSK 3.0 Level 1
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link
+                      to="/Learn-By-Song/HSK_3_Level_2"
+                      className="text-dark"
+                    >
                       HSK 3.0 Level 2
-                    </NavLink>
+                    </Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
