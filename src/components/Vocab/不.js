@@ -7,7 +7,8 @@ const 不 = (props) => {
     <div className={`col p-0 ${props.columnSize}`}>
       <Card className={`text-white ${props.gender}`}>
         <CardBody className="p-0">
-          <CardTitle className="my-0">不</CardTitle>
+          <CardTitle className="my-0">{props.settingDisplayTraditional ? "不": undefined}</CardTitle>
+          <CardTitle className="my-0">{props.settingDisplaySimplified ? "不": undefined}</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "bù": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "no": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayHSK3 ? "HSK 2.0 Level: 1": undefined}</CardText>

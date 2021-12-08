@@ -7,7 +7,8 @@ const 走 = (props) => {
     <div className={`col p-0 ${props.columnSize}`}>
       <Card className={`text-white ${props.gender}`}>
         <CardBody className="p-0">
-          <CardTitle className="my-0">走</CardTitle>
+          <CardTitle className="my-0">{props.settingDisplayTraditional ? "走": undefined}</CardTitle>
+          <CardTitle className="my-0">{props.settingDisplaySimplified ? "走": undefined}</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "zǒu": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "walk": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayHSK2 ? "HSK 2 Level: 2": undefined}</CardText>
