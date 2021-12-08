@@ -10,6 +10,8 @@ const 过 = (props) => {
           <CardTitle className="my-0">过</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "guò": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "come": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK2 ? "HSK 2 Level: 2": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK3 ? "HSK 3 Level: 1": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

@@ -8,8 +8,8 @@ const 你的 = (props) => {
   return (
     <div className={`col ${props.columnSize}`}>
       <div className="row">
-        <你 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish}/>
-        <的 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish}/>
+        <你 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish} settingDisplayHSK2={props.settingDisplayHSK2} settingDisplayHSK3={props.settingDisplayHSK3}/>
+        <的 columnSize="col-1of2" gender={props.gender} settingDisplayPinyin={props.settingDisplayPinyin} settingDisplayEnglish={props.settingDisplayEnglish} settingDisplayHSK2={props.settingDisplayHSK2} settingDisplayHSK3={props.settingDisplayHSK3}/>
       </div>
       <div className="row">
         <div className="col p-0 col-1of1 ">

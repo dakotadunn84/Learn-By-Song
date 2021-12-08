@@ -10,6 +10,8 @@ const 说 = (props) => {
           <CardTitle className="my-0">说</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "shuō": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "speak": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK2 ? "HSK 2 Level: 1": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK3 ? "HSK 3 Level: 1": undefined}</CardText>
         </CardBody>
       </Card>
     </div>

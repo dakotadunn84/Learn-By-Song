@@ -10,6 +10,8 @@ const 肯 = (props) => {
           <CardTitle className="my-0">肯</CardTitle>
           <CardText className="my-0">{props.settingDisplayPinyin ? "kěn": undefined}</CardText>
           <CardText className="my-0">{props.settingDisplayEnglish ? "willing": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK2 ? "HSK 2 Level: 4": undefined}</CardText>
+          <CardText className="my-0">{props.settingDisplayHSK3 ? "HSK 3 Level: 6": undefined}</CardText>
         </CardBody>
       </Card>
     </div>
