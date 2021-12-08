@@ -38,9 +38,9 @@ class Song2 extends React.Component {
 
   render() {
     return (
-      <div className="row justify-content-center">
-        <div className="col col-xl-7 p-4">
-          <div className="lookatmeborder">
+      <div className="col">
+        <div className="row justify-content-center">
+          <div className="col-xl-7 lookatmeborder">
             <h1 className="font-weight-light">我要你的愛</h1>
             <h1 className="font-weight-light">葛蘭</h1>
             <h1 className="font-weight-light">I want your love</h1>
@@ -191,6 +191,7 @@ class Song2 extends React.Component {
               width="100%"
             />
             <iframe
+              title="spotify"
               src="https://open.spotify.com/embed/track/3Ree0RiglJyG9ZSC0MG7LM?utm_source=generator"
               width="100%"
               height={this.state.settingDisplaySpotify ? "380" : "0"}
@@ -286,7 +287,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK2={this.state.settingDisplayHSK2}
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
-              <你的
+              <你-的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
@@ -1399,7 +1400,7 @@ class Song2 extends React.Component {
               />
             </Line>
           </div>
-        </div>
+          </div>
       </div>
     );
   }
