@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f36f7115fb048e7e8075f7d9fe739d37",
+    "revision": "a05f80347eabd1c844fa900e2a3415f6",
     "url": "/Learn-By-Song/index.html"
   },
   {
-    "revision": "34038ee34e8e4a06a053",
+    "revision": "81897f4f60646a5c90ed",
     "url": "/Learn-By-Song/static/css/main.3da193bd.chunk.css"
   },
   {
-    "revision": "a9f83b8d894c9e009333",
-    "url": "/Learn-By-Song/static/js/2.c6320c16.chunk.js"
+    "revision": "33f6732db2768a95b009",
+    "url": "/Learn-By-Song/static/js/2.9769e58a.chunk.js"
   },
   {
     "revision": "522e03d803bfdb0e0cda4e24f58dcf37",
-    "url": "/Learn-By-Song/static/js/2.c6320c16.chunk.js.LICENSE.txt"
+    "url": "/Learn-By-Song/static/js/2.9769e58a.chunk.js.LICENSE.txt"
   },
   {
     "revision": "f4067a53155a081f7c1d",
     "url": "/Learn-By-Song/static/js/3.116b0092.chunk.js"
   },
   {
-    "revision": "34038ee34e8e4a06a053",
-    "url": "/Learn-By-Song/static/js/main.84e82311.chunk.js"
+    "revision": "81897f4f60646a5c90ed",
+    "url": "/Learn-By-Song/static/js/main.b3d765e5.chunk.js"
   },
   {
     "revision": "0e3d78451bb0bf7acdf4",
