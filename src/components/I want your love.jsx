@@ -790,7 +790,7 @@ class Song2 extends React.Component {
                       I got you where I want you and I'm never gonna let you get
                       away from me
                     </CardText>
-                    <CardText className="my-0">Hear what i tell you</CardText>
+                    <CardText className="my-0">Hear what I tell you</CardText>
                     <CardText className="my-0">
                       I'm the girl for you so you better start to face it
                     </CardText>
@@ -920,7 +920,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 81, end: 84 }
                   }
                 }}
               />
@@ -963,7 +963,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 84, end: 86 }
                   }
                 }}
               />
@@ -1016,7 +1016,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 86, end: 90 }
                   }
                 }}
               />
@@ -1089,7 +1089,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 89, end: 92 }
                   }
                 }}
               />
@@ -1112,7 +1112,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 92, end: 94 }
                   }
                 }}
               />
@@ -1145,7 +1145,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 94, end: 97 }
                   }
                 }}
               />
@@ -1188,7 +1188,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 97, end: 100 }
                   }
                 }}
               />
@@ -1231,7 +1231,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 100, end: 102 }
                   }
                 }}
               />
@@ -1284,7 +1284,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 102, end: 105 }
                   }
                 }}
               />
@@ -1357,7 +1357,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 120, end: 121 }
                   }
                 }}
               />
@@ -1430,7 +1430,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 121, end: 137}
                   }
                 }}
               />
@@ -1468,7 +1468,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 137, end: 139 }
                   }
                 }}
               />
@@ -1491,7 +1491,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 139, end: 142 }
                   }
                 }}
               />
@@ -1524,7 +1524,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 142, end: 145 }
                   }
                 }}
               />
@@ -1567,7 +1567,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 145, end: 148 }
                   }
                 }}
               />
@@ -1620,7 +1620,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 147, end: 150 }
                   }
                 }}
               />
@@ -1683,7 +1683,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 150, end: 152 }
                   }
                 }}
               />
@@ -1726,7 +1726,7 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 151, end: 153 }
                   }
                 }}
               />
@@ -1759,12 +1759,12 @@ class Song2 extends React.Component {
                 loop="true"
                 config={{
                   youtube: {
-                    playerVars: { start: 10, end: 13 }
+                    playerVars: { start: 153, end: 159 }
                   }
                 }}
               />
               <為什麼
-                columnSize="col-3of6"
+                columnSize="col-3of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1774,7 +1774,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <不
-                columnSize="col-1of6"
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1784,7 +1784,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <肯
-                columnSize="col-1of6"
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1794,7 +1794,17 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <說
-                columnSize="col-1of6"
+                columnSize="col-1of7"
+                gender="neutral-gender"
+                settingDisplayTraditional={this.state.settingDisplayTraditional}
+                settingDisplaySimplified={this.state.settingDisplaySimplified}
+                settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
+                settingDisplayHSK2={this.state.settingDisplayHSK2}
+                settingDisplayHSK3={this.state.settingDisplayHSK3}
+              />
+              <愛
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
