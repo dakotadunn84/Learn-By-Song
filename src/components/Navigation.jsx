@@ -9,8 +9,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavLink,
+  DropdownItem
 } from "reactstrap";
 
 export default class Navigation extends React.Component {

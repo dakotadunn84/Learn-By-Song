@@ -25,6 +25,7 @@ class Song2 extends React.Component {
 
     this.state = {
       settingDisplayYouTube: true,
+      settingDisplayYouTubeInLines: false,
       settingDisplaySpotify: false,
       settingDisplayTraditional: true,
       settingDisplaySimplified: false,
@@ -71,6 +72,22 @@ class Song2 extends React.Component {
                         <label>
                           <input
                             type="checkbox"
+                            value="settingDisplayYouTubeInLines"
+                            defaultChecked={this.state.settingDisplayYouTubeInLines}
+                            onChange={(e) =>
+                              this.setState((prevState) => ({
+                                settingDisplayYouTubeInLines:
+                                  !prevState.settingDisplayYouTubeInLines,
+                              }))
+                            }
+                          />{" "}
+                          YouTube Clips In Lines
+                        </label>
+                      </h4>
+                      <h4>
+                        <label>
+                          <input
+                            type="checkbox"
                             value="settingDisplaySpotify"
                             defaultChecked={this.state.settingDisplaySpotify}
                             onChange={(e) =>
@@ -88,7 +105,9 @@ class Song2 extends React.Component {
                           <input
                             type="checkbox"
                             value="settingDisplayTraditional"
-                            defaultChecked={this.state.settingDisplayTraditional}
+                            defaultChecked={
+                              this.state.settingDisplayTraditional
+                            }
                             onChange={(e) =>
                               this.setState((prevState) => ({
                                 settingDisplayTraditional:
@@ -190,6 +209,7 @@ class Song2 extends React.Component {
               height={this.state.settingDisplayYouTube ? "380px" : "0"}
               width="100%"
             />
+
             <iframe
               title="spotify"
               src="https://open.spotify.com/embed/track/3Ree0RiglJyG9ZSC0MG7LM?utm_source=generator"
@@ -201,6 +221,17 @@ class Song2 extends React.Component {
             ></iframe>
 
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 10, end: 13 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
@@ -213,6 +244,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 13, end: 16 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of2"
                 gender="neutral-gender"
@@ -235,6 +277,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 16, end: 18 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of3"
                 gender="neutral-gender"
@@ -267,6 +320,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 18, end: 20 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of4"
                 gender="neutral-gender"
@@ -287,7 +351,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK2={this.state.settingDisplayHSK2}
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
-              <你-的
+              <你的
                 columnSize="col-2of4"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
@@ -299,6 +363,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 21, end: 24 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -341,6 +416,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 23, end: 27 }
+                  }
+                }}
+              />
               <你
                 columnSize="col-1of8"
                 gender="neutral-gender"
@@ -403,6 +489,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 26, end: 29 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
@@ -415,6 +512,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 29, end: 31 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of2"
                 gender="neutral-gender"
@@ -437,6 +545,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 31, end: 34 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of3"
                 gender="neutral-gender"
@@ -469,6 +588,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 34, end: 37 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of4"
                 gender="neutral-gender"
@@ -501,6 +631,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 37, end: 39 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -546,6 +687,17 @@ class Song2 extends React.Component {
               lineMeaning="Why don't you say it out loud?"
               settingDisplayEnglish={this.state.settingDisplayEnglish}
             >
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 39, end: 42 }
+                  }
+                }}
+              />
               <你
                 columnSize="col-1of8"
                 gender="neutral-gender"
@@ -608,6 +760,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 42, end: 74 }
+                  }
+                }}
+              />
               <div className="col p-0 col-1of1">
                 <Card className="text-white bg-dark">
                   <CardBody className="p-0">
@@ -627,7 +790,7 @@ class Song2 extends React.Component {
                       I got you where I want you and I'm never gonna let you get
                       away from me
                     </CardText>
-                    <CardText className="my-0">Hear what i tell you</CardText>
+                    <CardText className="my-0">Hear what I tell you</CardText>
                     <CardText className="my-0">
                       I'm the girl for you so you better start to face it
                     </CardText>
@@ -651,6 +814,17 @@ class Song2 extends React.Component {
               </div>
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 73, end: 76 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
@@ -663,6 +837,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 76, end: 79 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of2"
                 gender="neutral-gender"
@@ -685,6 +870,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 78, end: 81 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of3"
                 gender="neutral-gender"
@@ -717,6 +913,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 81, end: 84 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of4"
                 gender="neutral-gender"
@@ -749,6 +956,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 84, end: 86 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -791,6 +1009,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 86, end: 90 }
+                  }
+                }}
+              />
               <你
                 columnSize="col-1of8"
                 gender="neutral-gender"
@@ -853,6 +1082,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 89, end: 92 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
@@ -865,6 +1105,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 92, end: 94 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of2"
                 gender="neutral-gender"
@@ -887,6 +1138,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 94, end: 97 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of3"
                 gender="neutral-gender"
@@ -919,6 +1181,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 97, end: 100 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of4"
                 gender="neutral-gender"
@@ -951,6 +1224,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 100, end: 102 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -993,6 +1277,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 102, end: 105 }
+                  }
+                }}
+              />
               <你
                 columnSize="col-1of8"
                 gender="neutral-gender"
@@ -1055,6 +1350,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 120, end: 121 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of6"
                 gender="neutral-gender"
@@ -1117,6 +1423,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 121, end: 137}
+                  }
+                }}
+              />
               <div className="col p-0 col-1of1">
                 <Card className="text-white bg-dark">
                   <CardBody className="p-0">
@@ -1144,6 +1461,17 @@ class Song2 extends React.Component {
               </div>
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 137, end: 139 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of1"
                 gender="neutral-gender"
@@ -1156,6 +1484,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 139, end: 142 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of2"
                 gender="neutral-gender"
@@ -1178,6 +1517,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 142, end: 145 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of3"
                 gender="neutral-gender"
@@ -1210,6 +1560,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 145, end: 148 }
+                  }
+                }}
+              />
               <我
                 columnSize="col-1of4"
                 gender="neutral-gender"
@@ -1252,6 +1613,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 147, end: 150 }
+                  }
+                }}
+              />
               <隻
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -1304,6 +1676,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 150, end: 152 }
+                  }
+                }}
+              />
               <你
                 columnSize="col-1of5"
                 gender="neutral-gender"
@@ -1336,6 +1719,17 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 151, end: 153 }
+                  }
+                }}
+              />
               <為什麼
                 columnSize="col-3of4"
                 gender="neutral-gender"
@@ -1358,8 +1752,19 @@ class Song2 extends React.Component {
               />
             </Line>
             <Line>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTubeInLines ? "380px" : "0"}
+                width="100%"
+                loop="true"
+                config={{
+                  youtube: {
+                    playerVars: { start: 153, end: 159 }
+                  }
+                }}
+              />
               <為什麼
-                columnSize="col-3of6"
+                columnSize="col-3of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1369,7 +1774,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <不
-                columnSize="col-1of6"
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1379,7 +1784,7 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <肯
-                columnSize="col-1of6"
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1389,7 +1794,17 @@ class Song2 extends React.Component {
                 settingDisplayHSK3={this.state.settingDisplayHSK3}
               />
               <說
-                columnSize="col-1of6"
+                columnSize="col-1of7"
+                gender="neutral-gender"
+                settingDisplayTraditional={this.state.settingDisplayTraditional}
+                settingDisplaySimplified={this.state.settingDisplaySimplified}
+                settingDisplayPinyin={this.state.settingDisplayPinyin}
+                settingDisplayEnglish={this.state.settingDisplayEnglish}
+                settingDisplayHSK2={this.state.settingDisplayHSK2}
+                settingDisplayHSK3={this.state.settingDisplayHSK3}
+              />
+              <愛
+                columnSize="col-1of7"
                 gender="neutral-gender"
                 settingDisplayTraditional={this.state.settingDisplayTraditional}
                 settingDisplaySimplified={this.state.settingDisplaySimplified}
@@ -1400,7 +1815,7 @@ class Song2 extends React.Component {
               />
             </Line>
           </div>
-          </div>
+        </div>
       </div>
     );
   }
