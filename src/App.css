@@ -46,7 +46,12 @@
   left: 0;
 }
 
-.test-5 .col {
+.scrolly {
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.test-5 {
   width: calc(100% / 5);
 }
 
