@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -16,8 +15,6 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -215,10 +212,34 @@
   width: calc(100% / 6);
 }
 
-.lookatmeborder .card-group {
+.lookatmeborder .card-group  {
   border-color: #d9534f;
   border-width: thick;
   border-style: solid;
   border: 2px solid;
   border-radius: 5px;
 }
+
+.lookatmeborder2  {
+  border-color: #d9534f;
+  border-width: thick;
+  border-style: solid;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.lyrics {
+  text-align: center;
+}
+
+.row-for-enabling-side-by-side-view {
+  max-height: 90vh;
+}
+
+.widescreen-col {
+  max-height: 90vh;
+}
+
+.settings {
+  font-size: 1.4rem;
+}       
