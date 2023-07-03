@@ -1,7 +1,14 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "../App.css";
-import { Card, CardBody, CardTitle, CardText, CardGroup } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  Button,
+  UncontrolledCollapse,
+} from "reactstrap";
 import Line from "./Line";
 import 我 from "./Vocab/我";
 import 要 from "./Vocab/要";
@@ -39,202 +46,220 @@ class Song2 extends React.Component {
 
   render() {
     return (
-      <div className="col">
-        <div className="row">
-          <div className="col">
-            <div className="row">
-              <div className="col lookatmeborder">
-                <h1 className="font-weight-light">我要你的愛</h1>
-                <h1 className="font-weight-light">葛蘭</h1>
-                <h1 className="font-weight-light">I want your love</h1>
-                <h1 className="font-weight-light">Grace Chang</h1>
-                <ReactPlayer
-                  url="https://www.youtube.com/watch?v=41vF3wYN9S4"
-                  height={this.state.settingDisplayYouTube ? "380px" : "0"}
-                  width="100%"
-                />
-
-                <div>
-                  <CardGroup className="my-1">
-                    <Card className="text-white bg-dark">
-                      <CardBody className="p-0">
-                        <CardTitle className="my-0">Display Settings</CardTitle>
-                        <CardText className="my-0">
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayYouTube"
-                                defaultChecked={
-                                  this.state.settingDisplayYouTube
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayYouTube:
-                                      !prevState.settingDisplayYouTube,
-                                  }))
-                                }
-                              />{" "}
-                              YouTube Video
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayYouTubeInLines"
-                                defaultChecked={
-                                  this.state.settingDisplayYouTubeInLines
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayYouTubeInLines:
-                                      !prevState.settingDisplayYouTubeInLines,
-                                  }))
-                                }
-                              />{" "}
-                              YouTube Clips In Lines
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplaySpotify"
-                                defaultChecked={
-                                  this.state.settingDisplaySpotify
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplaySpotify:
-                                      !prevState.settingDisplaySpotify,
-                                  }))
-                                }
-                              />{" "}
-                              Spotify Audio
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayTraditional"
-                                defaultChecked={
-                                  this.state.settingDisplayTraditional
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayTraditional:
-                                      !prevState.settingDisplayTraditional,
-                                  }))
-                                }
-                              />{" "}
-                              Traditional
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplaySimplified"
-                                defaultChecked={
-                                  this.state.settingDisplaySimplified
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplaySimplified:
-                                      !prevState.settingDisplaySimplified,
-                                  }))
-                                }
-                              />{" "}
-                              Simplified
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayPinyin"
-                                defaultChecked={this.state.settingDisplayPinyin}
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayPinyin:
-                                      !prevState.settingDisplayPinyin,
-                                  }))
-                                }
-                              />{" "}
-                              Pinyin
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayEnglish"
-                                defaultChecked={
-                                  this.state.settingDisplayEnglish
-                                }
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayEnglish:
-                                      !prevState.settingDisplayEnglish,
-                                  }))
-                                }
-                              />{" "}
-                              English
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayHSK2"
-                                defaultChecked={this.state.settingDisplayHSK2}
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayHSK2:
-                                      !prevState.settingDisplayHSK2,
-                                  }))
-                                }
-                              />{" "}
-                              HSK 2.0 Levels
-                            </label>
-                          </h4>
-                          <h4>
-                            <label>
-                              <input
-                                type="checkbox"
-                                value="settingDisplayHSK3"
-                                defaultChecked={this.state.settingDisplayHSK3}
-                                onChange={(e) =>
-                                  this.setState((prevState) => ({
-                                    settingDisplayHSK3:
-                                      !prevState.settingDisplayHSK3,
-                                  }))
-                                }
-                              />{" "}
-                              HSK 3.0 Levels
-                            </label>
-                          </h4>
-                        </CardText>
-                      </CardBody>
-                    </Card>
-                  </CardGroup>
-                </div>
-
-                <iframe
-                  title="spotify"
-                  src="https://open.spotify.com/embed/track/3Ree0RiglJyG9ZSC0MG7LM?utm_source=generator"
-                  width="100%"
-                  height={this.state.settingDisplaySpotify ? "380" : "0"}
-                  frameBorder="0"
-                  allowfullscreen=""
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                ></iframe>
+      <div className="col page-wide-column-below-header">
+        <div className="row row-for-enabling-side-by-side-view">
+          <div className="col left-side-column widescreen-col p-1">
+            <div className="col lookatmeborder">
+              <div
+                className="row title-card-and-settings d-flex justify-content-between"
+                style={{ maxHeight: "30%" }}
+              >
+                <Card className="text-white bg-dark lookatmeborder2">
+                  <h1 className="font-weight-light">我要你的愛</h1>
+                  <h1 className="font-weight-light">葛蘭</h1>
+                  <h1 className="font-weight-light">I want your love</h1>
+                  <h1 className="font-weight-light">Grace Chang</h1>
+                  <Button
+                      color="primary"
+                      id="toggler"
+                      style={{
+                        marginBottom: "1rem",
+                      }}
+                    >
+                      Settings
+                    </Button>
+                    <UncontrolledCollapse toggler="#toggler">
+                      <Card className="text-white bg-dark lookatmeborder2">
+                        <CardBody className="p-0">
+                          <CardTitle className="my-0 text-center">
+                            Display Settings
+                          </CardTitle>
+                          <CardText className="p-1">
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayYouTube"
+                                  defaultChecked={
+                                    this.state.settingDisplayYouTube
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayYouTube:
+                                        !prevState.settingDisplayYouTube,
+                                    }))
+                                  }
+                                />{" "}
+                                YouTube Video
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayYouTubeInLines"
+                                  defaultChecked={
+                                    this.state.settingDisplayYouTubeInLines
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayYouTubeInLines:
+                                        !prevState.settingDisplayYouTubeInLines,
+                                    }))
+                                  }
+                                />{" "}
+                                YouTube Clips In Lines
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplaySpotify"
+                                  defaultChecked={
+                                    this.state.settingDisplaySpotify
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplaySpotify:
+                                        !prevState.settingDisplaySpotify,
+                                    }))
+                                  }
+                                />{" "}
+                                Spotify Audio
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayTraditional"
+                                  defaultChecked={
+                                    this.state.settingDisplayTraditional
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayTraditional:
+                                        !prevState.settingDisplayTraditional,
+                                    }))
+                                  }
+                                />{" "}
+                                Traditional
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplaySimplified"
+                                  defaultChecked={
+                                    this.state.settingDisplaySimplified
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplaySimplified:
+                                        !prevState.settingDisplaySimplified,
+                                    }))
+                                  }
+                                />{" "}
+                                Simplified
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayPinyin"
+                                  defaultChecked={
+                                    this.state.settingDisplayPinyin
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayPinyin:
+                                        !prevState.settingDisplayPinyin,
+                                    }))
+                                  }
+                                />{" "}
+                                Pinyin
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayEnglish"
+                                  defaultChecked={
+                                    this.state.settingDisplayEnglish
+                                  }
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayEnglish:
+                                        !prevState.settingDisplayEnglish,
+                                    }))
+                                  }
+                                />{" "}
+                                English
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayHSK2"
+                                  defaultChecked={this.state.settingDisplayHSK2}
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayHSK2:
+                                        !prevState.settingDisplayHSK2,
+                                    }))
+                                  }
+                                />{" "}
+                                HSK 2.0 Levels
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  value="settingDisplayHSK3"
+                                  defaultChecked={this.state.settingDisplayHSK3}
+                                  onChange={(e) =>
+                                    this.setState((prevState) => ({
+                                      settingDisplayHSK3:
+                                        !prevState.settingDisplayHSK3,
+                                    }))
+                                  }
+                                />{" "}
+                                HSK 3.0 Levels
+                              </label>
+                            </p>
+                          </CardText>
+                        </CardBody>
+                      </Card>
+                    </UncontrolledCollapse>
+                  
+                </Card>
+                
               </div>
+
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=41vF3wYN9S4"
+                height={this.state.settingDisplayYouTube ? "380px" : "0"}
+                width="100%"
+              />
+
+              <iframe
+                title="spotify"
+                src="https://open.spotify.com/embed/track/3Ree0RiglJyG9ZSC0MG7LM?utm_source=generator"
+                width="100%"
+                height={this.state.settingDisplaySpotify ? "380" : "0"}
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
             </div>
           </div>
-          <div className="col">
+          <div className="col lyrics right-side-column widescreen-col">
             <div class="col container-fluid h-100 d-flex flex-column lookatmeborder">
               <div class="col mh-100 scrolly">
                 <Line>
